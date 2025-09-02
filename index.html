@@ -174,7 +174,7 @@
     function drawBackground() {
       if (!bgReady) return;
       const sourceW = bgImg.width;
-      const sourceH = Math.floor(bgImg.height * 0.85); // crop bottom 15%
+      const sourceH = bgImg.height; // crop bottom 15%
       const coverScale = Math.max(canvas.width / sourceW, canvas.height / sourceH);
       const dw = Math.ceil(sourceW * coverScale);
       const dh = Math.ceil(sourceH * coverScale);
